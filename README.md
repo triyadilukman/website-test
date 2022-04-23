@@ -5,6 +5,9 @@ This is just layout website test
 This project was built with
 * [Create React App](https://github.com/facebook/create-react-app).
 
+Deployed Version
+* [Deployed](https://master.d3n0gxacauv2qg.amplifyapp.com/)
+
 ## Important folders
 ```sh
 src/
