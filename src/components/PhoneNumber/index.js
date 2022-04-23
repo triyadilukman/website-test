@@ -8,13 +8,15 @@ const PhoneNumber = ({ className = "", onSubmit }) => {
 	const handleChange = (event) => {
 		setError("");
 		const value = event.target.value;
-		const isMatch = value.toLowerCase().replace(/[^\d]/g, "");
+		const format = value.toLowerCase().replace(/[^\d]/g, "");
 
-		if (isMatch) {
+		if (format.length < 11) {
+			setPhone(format);
+		} else {
 			const formatNumber =
 				value.length < 5
 					? value
-					: `${value.slice(0, 3)}-${value.slice(4, value.length)}`;
+					: `${value.slice(0, 3)}-${value.slice(3, value.length)}`;
 
 			setPhone(formatNumber);
 		}
@@ -22,7 +24,7 @@ const PhoneNumber = ({ className = "", onSubmit }) => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		if (phone.length < 10) setError("10 Numbers length minimum !");
+		if (phone.length < 10) setError("11 Numbers length minimum !");
 		else onSubmit(phone);
 	};
 
@@ -40,7 +42,7 @@ const PhoneNumber = ({ className = "", onSubmit }) => {
 				name="phone"
 				value={phone}
 				type="text"
-				maxLength={10}
+				maxLength={11}
 			/>
 			{error ? <small style={{ color: "red" }}>{error}</small> : null}
 
