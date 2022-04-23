@@ -1,0 +1,10 @@
+@media (max-width: 480px) {
+  .contact {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+}

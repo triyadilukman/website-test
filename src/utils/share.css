@@ -1,0 +1,32 @@
+.u-flex {
+  display: flex;
+}
+
+.u-center {
+  justify-content: center;
+}
+
+.u-space-between {
+  justify-content: space-between;
+}
+
+.u-hr-none {
+  border: none;
+}
+
+.u-mt-32 {
+  margin-top: 32px;
+}
+
+.u-mr-32 {
+  margin-right: 32px;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.home-title {
+  text-align: center;
+  margin: 32px 0;
+}

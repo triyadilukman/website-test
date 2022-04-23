@@ -1,0 +1,59 @@
+.header-wp {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  padding: 32px;
+  background-image: linear-gradient(aqua, blue);
+  color: white;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  padding: 0 8px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu-item::after {
+  content: '|';
+  padding-left: 8px;
+}
+
+.menu-item:last-child::after {
+  content: ' ';
+}
+
+.menu-mobile {
+  position: relative;
+  display: none;
+}
+
+.menu-mobile--dropdown {
+  position: absolute;
+  background-color: white;
+  top: 90px;
+  width: 100%;
+}
+
+.menu-mobile--dropdown a {
+  display: block;
+  text-decoration: none;
+  padding: 8px;
+}
+
+@media (max-width: 480px) {
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+}

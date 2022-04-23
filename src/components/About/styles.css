@@ -1,0 +1,41 @@
+.about-wp {
+  flex-direction: row;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-left {
+  width: 30%;
+  background-color: #b5af79;
+  padding: 2px 24px;
+}
+
+.about-right {
+  width: 70%;
+  background-color: #acaa9d;
+  padding: 2px 24px;
+}
+
+.about-right--content {
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  justify-content: space-between;
+}
+
+.about-right--item {
+  width: 48%;
+}
+
+@media (max-width: 480px) {
+  .about-wp {
+    flex-direction: column;
+  }
+
+  .about-right,
+  .about-left,
+  .about-right--item {
+    width: auto;
+  }
+}
