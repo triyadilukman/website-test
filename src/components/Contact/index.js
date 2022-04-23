@@ -1,5 +1,5 @@
-const Contact = ({ className = "", phoneNumber = "" }) => {
-	const phone = phoneNumber || localStorage.getItem("alami-test-phone");
+const Contact = ({ className = "", phoneNumber = "021-12345678" }) => {
+	const phone = localStorage.getItem("alami-test-phone") || phoneNumber;
 
 	return (
 		<div className={className}>

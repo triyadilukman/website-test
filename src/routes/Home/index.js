@@ -6,7 +6,7 @@ import PhoneNumberComponent from "components/PhoneNumber";
 import "./styles.css";
 
 const Home = ({ page = "" }) => {
-	const [phoneNumber, setPhone] = useState('');
+	const [phoneNumber, setPhone] = useState('021-12345678');
 
 	const handleSubmitPhone = (value) => {
 		setPhone(value);
