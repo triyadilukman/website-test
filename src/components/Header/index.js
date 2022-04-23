@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 
 const Header = (props) => {
-
-  console.log('haha', props)
 	const [showMenu, setMenu] = useState(false);
 
 	const handleShowMenu = () => {

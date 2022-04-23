@@ -50,4 +50,13 @@ To run this app eed to get involve in some steps below
 ### How to deploy app
 ### AWS Amplify
 1. Login to your account:  https://aws.amazon.com/console/
-2. Go to aaws amplify: 
+2. Go to aaws amplify: https://us-east-1.console.aws.amazon.com/amplify/
+3. Click dropdwon New App -> Host Web App
+   ![alt text](https://ibb.co/zS9mwpG)
+4. Choose github
+   ![alt text](https://ibb.co/M8BSzkM)
+5. Connect your github repository and choose branch
+   ![alt text](https://ibb.co/WkZyFhx)
+6. AWS amplify will build and deploy your web app github repo
+   ![alt text](https://ibb.co/4MDx0Tg)
+  
